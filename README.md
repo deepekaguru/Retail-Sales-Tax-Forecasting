@@ -4,6 +4,8 @@
 
 An interactive forecasting web app to visualize and predict quarterly retail sales tax revenue by city and county using Facebook Prophet. Built using Streamlit and deployed locally (cloud optional).
 
+![image](https://github.com/user-attachments/assets/fe0c6995-1b41-4fd2-8e68-1f80cea39ed6)
+
 ---
 
 ## 🚀 Features
