@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retail Tax Forecast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 30px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        select, input[type="number"] {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retail Sales Tax Forecast</h1>
+    <form method="POST">
+        <label for="county">Select County:</label>
+        <select name="county">
+            {% for loc in locations %}
+                <option value="{{ loc[0] }}">{{ loc[0] }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="city">Select City:</label>
+        <select name="city">
+            {% for loc in locations %}
+                <option value="{{ loc[1] }}">{{ loc[1] }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="periods">Quarters to Forecast:</label>
+        <input type="number" name="periods" value="4" min="1" max="12">
+
+        <button type="submit">Generate Forecast</button>
+    </form>
+
+    {% if mape %}
+        <h3>MAPE Score: {{ mape }}%</h3>
+    {% endif %}
+
+    {% if plot %}
+        <div>{{ plot | safe }}</div>
+    {% endif %}
+</body>
+</html>
