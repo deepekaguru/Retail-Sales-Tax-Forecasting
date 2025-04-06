@@ -1,6 +1,6 @@
 # Retail-Tax-Forecasting
-[![View in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://your-app-link](https://retail-sales-tax-forecasting-9pjnwev2l4zjyc9buzujjy.streamlit.app/))
-
+[![View in Streamlit](([https://your-app-link](https://retail-sales-tax-forecasting-9pjnwev2l4zjyc9buzujjy.streamlit.app/))
+)]
 # 📈 Retail Sales Tax Forecast App
 
 An interactive forecasting web app to visualize and predict quarterly retail sales tax revenue by city and county using Facebook Prophet. Built using Streamlit and deployed locally (cloud optional).
