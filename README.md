@@ -1,4 +1,5 @@
 # Retail-Tax-Forecasting
+[![View in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://your-app-link](https://retail-sales-tax-forecasting-9pjnwev2l4zjyc9buzujjy.streamlit.app/))
 
 # 📈 Retail Sales Tax Forecast App
 
@@ -57,6 +58,9 @@ cd retail-forecast-app
 
 # 2. Install dependencies
 pip install -r requirements.txt
+
+
+
 
 # 3. Run the app
 streamlit run streamlit_app.py
